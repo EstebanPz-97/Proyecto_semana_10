@@ -11,6 +11,7 @@ import SingleView from './views/SingleView/index';
 import MainNavigation from './modules/MainNavigation';
 import { SearchContext } from './util/Search/index';
 import Contactenos from './views/Contactenos/index';
+import Header from "../src/components/Header/index";
 
 const App = () => {
   const [animeData, setAnimeData] = useState([]);
@@ -38,6 +39,7 @@ const App = () => {
       <Router>
         <MainNavigation />
         <main>
+          <Header/>
           <Switch>
              <Route path="/" exact>
               <Homepage />

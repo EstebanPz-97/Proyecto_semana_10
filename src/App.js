@@ -1,63 +1,38 @@
-import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from 'react-router-dom';
-import Homepage from './views/Homepage/index';
-import Results from './views/Results/index';
-import SingleView from './views/SingleView/index';
-import MainNavigation from './modules/MainNavigation';
-import { SearchContext } from './util/Search/index';
-import Contactenos from './views/Contactenos/index';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Homepage from './views/Homepage';
+import Detail from './views/Detail';
+import Nosotros from './views/Nosotros';
+import Contactenos from './views/Contactenos';
+import Navbar from './components/Navbar';
 
-const App = () => {
-  const [animeData, setAnimeData] = useState([]);
-  const [singleData, setSingleData] = useState({});
 
-  const setData = (data) => {
-    setAnimeData(data);
-  };
-
-  const setSingle = (data) => {
-    setSingleData(data);
-  };
-
-  const search = (searchTerm) => {
-    return fetch(
-      `https://api.jikan.moe/v3/search/anime?q=${searchTerm}&limit=20`
-    ).then((response) => response.json());
-  };
-
-  
+function App() {
   return (
-    <SearchContext.Provider
-      value={{ search, animeData, setData, singleData, setSingle }}
-    >
-      <Router>
-        <MainNavigation />
-        <main>
-          <Switch>
-             <Route path="/" exact>
-              <Homepage />
-            </Route>
-            <Route path="/results" exact>
-              <Results />
-            </Route>
-            <Route path="/views" exact>
-              <Contactenos/>
-            </Route>
-            <Route path="/single-view" exact>
-              <SingleView />
-            </Route>
-            <Redirect to="/" />
-          </Switch>
-        </main>
-      </Router>
-    </SearchContext.Provider>
+    <div className="App">
+       <Router>
+        <Header />
+        <Switch>
+          <Route path="/detail">
+            <Detail />
+          </Route>
+          <Route path="/about">
+            <Nosotros />
+          </Route>
+          <Route path="/contactenos">
+            <Contactenos />
+          </Route>
+          
+           <Route path="/">
+            <Homepage />
+          </Route> 
+        </Switch>
+        <Footer />
+      </Router> 
+    </div>
   );
-};
+}
 
 export default App;
-

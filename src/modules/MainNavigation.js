@@ -20,7 +20,7 @@ export default function SearchAppBar() {
          <Toolbar>
           <Link to="/" className={classes.title}>
             <Typography variant="h6" noWrap>
-              Anime Viewer
+              Inicio
             </Typography>
           </Link>          
         </Toolbar>

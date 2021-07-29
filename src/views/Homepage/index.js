@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { SearchContext } from '../../util/Search';
 import { FormControl, Input, IconButton, Grid } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
+import Carousel_data from '../../components/Carousel_data'
 import './homepage.css';
 
 const Homepage = () => {
@@ -27,6 +28,8 @@ const Homepage = () => {
       alignItems="center"
       alignContent="center"
     >
+        <Carousel_data />
+
       <Grid item> 
         <Grid item>
           <img

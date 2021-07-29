@@ -1,5 +1,4 @@
 import './homepage.css'
-// import { GetData } from '../../util/getData'
 import Carousel_data from '../../components/Carousel_data'
 
 export default function Homepage(){

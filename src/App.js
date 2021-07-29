@@ -5,11 +5,11 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
-import Homepages from './views/Homepages/index';
+import Homepage from './views/Homepage/index';
 import Results from './views/Results/index';
 import SingleView from './views/SingleView/index';
-import MainNavigation from './components/MainNavigation';
-import { SearchContext } from './utils/Search/index';
+import MainNavigation from './modules/MainNavigation';
+import { SearchContext } from './util/Search/index';
 import Contactenos from './views/Contactenos/index';
 
 const App = () => {
@@ -40,7 +40,7 @@ const App = () => {
         <main>
           <Switch>
              <Route path="/" exact>
-              <Homepages />
+              <Homepage />
             </Route>
             <Route path="/results" exact>
               <Results />

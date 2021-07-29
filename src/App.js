@@ -6,7 +6,6 @@ import Homepage from './views/Homepage';
 import Detail from './views/Detail';
 import Nosotros from './views/Nosotros';
 import Contactenos from './views/Contactenos';
-import Navbar from './components/Navbar';
 
 
 function App() {

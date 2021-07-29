@@ -8,12 +8,10 @@ import Nosotros from './views/Nosotros';
 import Contactenos from './views/Contactenos';
 import Navbar from './components/Navbar';
 import React, { useState } from 'react';
-import Homepage from './views/Homepage/index';
 import Results from './views/Results/index';
 import SingleView from './views/SingleView/index';
 import MainNavigation from './modules/MainNavigation';
 import { SearchContext } from './util/Search/index';
-import Contactenos from './views/Contactenos/index';
 
 const App = () => {
   const [animeData, setAnimeData] = useState([]);

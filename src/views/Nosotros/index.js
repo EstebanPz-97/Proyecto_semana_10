@@ -2,8 +2,6 @@ import './about.css'
 import "./mediaquerys.css"
 import foto1 from "../../assets/imgs/jeison.jpg";
 import foto2 from "../../assets/imgs/erika.jpeg";
-
-
 const Nosotros = () => (
     <div className="about">
         <div className="card-1">

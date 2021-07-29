@@ -1,10 +1,9 @@
 import './header.css'
-
-
+import Logo from '../Logo'
+import Navbar from '../Navbar'
 export default function Header (){
-
     return <header>
-        <h1>Header</h1>
-
+        <Logo />
+        <Navbar contactenos="contactenos" about="about" />
     </header>
 }

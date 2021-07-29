@@ -29,12 +29,7 @@ const Homepage = () => {
     >
       <Grid item> 
         <Grid item>
-          <img
-            alt="luffy"
-            src={process.env.PUBLIC_URL}
-            height={420}
-            width={550}
-          />
+          
         </Grid>
         <Grid item>
           <form className="home__form">

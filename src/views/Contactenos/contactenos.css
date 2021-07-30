@@ -1,11 +1,4 @@
-.H2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #b67dc9;
-    color: whitesmoke;
-}
-  
+ 
 .conatiner_center{
     display:flex ;
     flex-direction: column;

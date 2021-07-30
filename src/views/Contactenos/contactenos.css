@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
-    color: #ffff;
+    background-color: #b67dc9;
+    color: whitesmoke;
 }
   
 .conatiner_center{
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    background-color: #444444;
+    background-color: #b67dc9;
     padding: 50px;
     border-radius: 15px;
     margin: 15px;
@@ -22,7 +22,7 @@ label{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    color: white;
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
 }
@@ -33,16 +33,14 @@ input{
     border-radius: 10px;
     width: 500px;
     height: 40px;
-    border-color: #636363;
-    box-shadow: beige;
+    border-color: #865b94;
 }
   
 textarea{
     display: block;
     justify-content: space-between;
     border-radius: 10px;
-    border-color: #636363;
-    box-shadow: beige;
+    border-color: #865b94;
     width: 500px;
     height: 150px;
 }
@@ -56,6 +54,5 @@ button{
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    border-color:#636363;
-    box-shadow: beige;
+    border-color:#b67dc9;
 }

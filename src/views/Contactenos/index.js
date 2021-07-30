@@ -5,10 +5,10 @@ import './contactenos.css';
 //value={nombre} onChange={manejarNombre}
 function Contactenos() {
    const [persona, setPersona] = useState({
-       nombre:"",
-       apellido:"",
-       correo:"",
-       telefono:"",
+       name:"",
+       lastname:"",
+       email:"",
+       phone:"",
        sugerencia:"",
     });
 
@@ -37,26 +37,26 @@ function Contactenos() {
 
     return(
         <div>
-            <h2 className="H2">CONTACTENOS</h2>
+            <h2 className="H2"> CONTACT US</h2>
             <form className="conatiner_center" onSubmit={submit}>
                 <div >
-                   <label htmlFor="" className="label">Nombre:</label>
+                   <label htmlFor="" className="label">Name:</label>
                    <input  className="input" type= "text" value={persona.nombre} name="nombre" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlFor="" className="label">Apellido:</label>
+                   <label htmlFor="" className="label">Lastname:</label>
                    <input className="input" type= "text" value={persona.apellido} name="apellido" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlFor="" className="label">Correo:</label>
+                   <label htmlFor="" className="label">Email:</label>
                    <input  className="input" type= "email" value={persona.correo} name="correo" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlFor="" className="label" > Telefono:</label>
+                   <label htmlFor="" className="label" > Phone:</label>
                    <input className="input" type= "number" value={persona.telefono} name="telefono" onChange={formulario}/>
                 </div>
                 <div className="textarea">
-                  <label htmlFor="" className="label">Comentario:</label>                   
+                  <label htmlFor="" className="label">Commentary:</label>                   
                   <textarea  value={persona.sugerencia} name="sugerencia" onChange={formulario}/>
                 </div>
                 <div className="button">

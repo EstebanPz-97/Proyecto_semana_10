@@ -12,7 +12,7 @@
 }
   
 .animecard_paper:hover {
-    background-color: rgb(173, 226, 224);
-    opacity: 0.4;
+    background-color: rgba(211, 181, 224, 0.767);
+    opacity: 0.8;
 }
   

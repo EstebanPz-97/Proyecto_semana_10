@@ -1,0 +1,13 @@
+.singleanime-main {
+    margin-top: 30px;
+}
+  
+.singleanime-image {
+  border-radius: 10px;
+}
+  
+.singleanime-info {
+    max-width: 400px;
+    padding: 30px;
+    margin-top: 10px;
+}

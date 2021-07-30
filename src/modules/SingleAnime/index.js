@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Paper, Typography} from '@material-ui/core';
-
+import './singleanime.css'
 
 const SingleAnime = (props) => {
   console.log(props.info);
@@ -16,18 +16,18 @@ const SingleAnime = (props) => {
   return (
     <Grid
       container
-      spacing={10}
+      spacing={12}
       direction="row"
       justify="center"
       alignContent="center"
       alignItems="center"
-      className="singleanime__container"
+      className="singleanime-main"
     >
       <Grid item>
-        <img src={imageUrl} alt={title} className="singleanime__image" />
+        <img src={imageUrl} alt={title} className="singleanime-image" />
       </Grid>
       <Grid item>
-        <Paper elevation={3} className="singleanime__description">
+        <Paper elevation={3} className="singleanime-info">
           <Typography variant="h4" component="h2">
             {title}
           </Typography>

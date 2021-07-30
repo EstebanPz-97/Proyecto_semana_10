@@ -31,9 +31,9 @@ const AnimeCard = (props) => {
       : props.anime.synopsis;
 
   return (
-    <GridListTile className="animecard__container">
-      <Grid container item xs={12}>
-        <Paper className="animecard__paper">
+    <GridListTile className="animecard-main">
+      <Grid container item xs={16}>
+        <Paper className="animecard_paper">
           <img src={imageUrl} alt={title} style={{ maxHeight: 300 }} />  
           <Typography variant="h5" component="h2">
             {title}
@@ -46,8 +46,9 @@ const AnimeCard = (props) => {
             variant="body1"
             style={{ marginBottom: 0 }}
             onClick={onClickHandler}
+            color="primary"
           >
-            Learn More
+            More Information
           </Link>
         </Paper>
       </Grid>

@@ -4,7 +4,7 @@ import { GridList } from '@material-ui/core';
 
 const AnimeList = (props) => {
   return (
-    <GridList className="animelist__container">
+    <GridList className="animelist-container">
       {props.data.map((anime) => (
         <AnimeCard key={anime.mal_id} anime={anime} />
       ))}

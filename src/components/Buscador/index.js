@@ -1,6 +1,6 @@
 
 
-const Busquedo = {
+class Busquedor extends Component {
     constructor(props) {
       super(props);
       this.state = {

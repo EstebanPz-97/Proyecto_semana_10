@@ -10,6 +10,7 @@ const SingleAnime = (props) => {
   const rating = props.info.rating;
   const airing = String(props.info.airing);
   const broadcast = props.info.broadcast;
+  const synopsis = props.info.synopsis;
   const score = props.info.score;
   const url = props.info.url;
   return (
@@ -46,7 +47,10 @@ const SingleAnime = (props) => {
             Episodes: {episodes}
           </Typography>
           <Typography variant="h5" component="h2">
-          <a href={url}> My Anime List </a> 
+            Synopsis: {synopsis}
+          </Typography>
+          <Typography variant="h5" component="h2">
+          <a href={url}>  </a> 
           </Typography>          
           
         </Paper>

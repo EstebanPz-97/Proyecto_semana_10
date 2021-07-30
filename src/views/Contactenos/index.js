@@ -37,8 +37,7 @@ function Contactenos() {
 
     return(
         <div>
-            <h2 className="H2"> CONTACT US</h2>
-            <form className="conatiner_center" onSubmit={submit}>
+                    <form className="conatiner_center" onSubmit={submit}>
                 <div >
                    <label htmlFor="" className="label">Name:</label>
                    <input  className="input" type= "text" value={persona.nombre} name="nombre" onChange={formulario}/>

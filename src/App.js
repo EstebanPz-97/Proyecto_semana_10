@@ -13,14 +13,12 @@ function App() {
        <Router>
         <Header contactenos="contactenos" about="about" />
         <Switch>
-
           <Route path="/about">
             <Nosotros />
           </Route>
           <Route path="/contactenos">
             <Contactenos />
           </Route>
-          
            <Route path="/">
             <Homepage />
           </Route> 

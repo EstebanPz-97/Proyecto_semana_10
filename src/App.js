@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Homepage from './views/Homepage';
 import Nosotros from './views/Nosotros';
 import Contactenos from './views/Contactenos';
+import Results from './modules/AnimeCard/index';
 import { SearchContext } from './util/Search/index';
 
 function App() {

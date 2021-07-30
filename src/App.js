@@ -36,10 +36,6 @@ function App() {
     >
        <Router>
         <Header contactenos="contactenos" about="about" />
-<<<<<<< HEAD
-        <Buscador/>
-=======
->>>>>>> dev
         <Switch>
           <Route path="/about">
             <Nosotros />

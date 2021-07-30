@@ -26,22 +26,23 @@ const Homepage = () => {
       justify="center"
       alignItems="center"
       alignContent="center"
+
     >
       <Grid item> 
         <Grid item>
           
         </Grid>
         <Grid item>
-          <form className="home__form">
-            <FormControl type="submit" className="home__formControl">
+          <form className="form">
+            <FormControl type="submit" className="formControl">
               <Input
                 placeholder="Search for you favorite anime..."
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
-                className="home__input"
+                className="search"
               />
               <IconButton
-                className="home__iconButton"
+                className="search-icon"
                 variant="contained"
                 color="primary"
                 type="submit"

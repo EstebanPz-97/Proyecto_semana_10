@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-          <SearchContext.Provider
+          <SearchContext.Provider 
       value={{ search, animeData, setData, singleData, setSingle }}
     >
        <Router>

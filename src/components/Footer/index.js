@@ -16,7 +16,7 @@ const Footer = () => (
                 <span>
                     erika.blanco@alteru.co
                 </span>
-                <div class="redes">
+                <div className="redes">
                     <a href="#/"><img src={logo1} alt="Facebook" /></a>
                     <a href="#/"><img src={logo2} alt="GitHub" /></a>
                     <a href="#/"><img src={logo3} alt="Instagram" /></a>
@@ -31,7 +31,7 @@ const Footer = () => (
                 <span>
                     esteban.perez@alteru.co
                 </span>
-                <div class="redes">
+                <div className="redes">
                     <a href="#/"><img src={logo1} alt="Facebook" /></a>
                     <a href="#/"><img src={logo2} alt="GitHub" /></a>
                     <a href="#/"><img src={logo3} alt="Instagram" /></a>
@@ -46,7 +46,7 @@ const Footer = () => (
                 <span>
                     jeison.cabarcas@alteru.co
                 </span>
-                <div class="redes">
+                <div className="redes">
                     <a href="https://www.facebook.com/jeison.cabarcas.9"><img src={logo1} alt="Facebook" /></a>
                     <a href="https://github.com/JeisonCabarcasP"><img src={logo2} alt="GitHub" /></a>
                     <a href="https://www.instagram.com/jeisoncabarcas/"><img src={logo3} alt="Instagram" /></a>

@@ -40,23 +40,23 @@ function Contactenos() {
             <h2 className="H2">CONTACTENOS</h2>
             <form className="conatiner_center" onSubmit={submit}>
                 <div >
-                   <label htmlfor="" className="label">Nombre:</label>
+                   <label htmlFor="" className="label">Nombre:</label>
                    <input  className="input" type= "text" value={persona.nombre} name="nombre" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlfor="" className="label">Apellido:</label>
+                   <label htmlFor="" className="label">Apellido:</label>
                    <input className="input" type= "text" value={persona.apellido} name="apellido" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlfor="" className="label">Correo:</label>
+                   <label htmlFor="" className="label">Correo:</label>
                    <input  className="input" type= "email" value={persona.correo} name="correo" onChange={formulario}/>
                 </div>
                 <div>
-                   <label htmlfor="" className="label" > Telefono:</label>
+                   <label htmlFor="" className="label" > Telefono:</label>
                    <input className="input" type= "number" value={persona.telefono} name="telefono" onChange={formulario}/>
                 </div>
                 <div className="textarea">
-                  <label htmlfor="" className="label">Comentario:</label>                   
+                  <label htmlFor="" className="label">Comentario:</label>                   
                   <textarea  value={persona.sugerencia} name="sugerencia" onChange={formulario}/>
                 </div>
                 <div className="button">

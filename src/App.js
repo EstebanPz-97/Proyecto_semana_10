@@ -7,6 +7,7 @@ import Homepage from './views/Homepage';
 import Nosotros from './views/Nosotros';
 import Contactenos from './views/Contactenos';
 import Results from './views/Results/index';
+import SingleView from "./views/SingleView/index"
 import { SearchContext } from './util/Search/index';
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
           </Route>
             <Route path="/results" exact>
               <Results />
+            </Route>
+            <Route path="/single-view" exact>
+              <SingleView />
             </Route>
            <Route path="/">
             <Homepage />

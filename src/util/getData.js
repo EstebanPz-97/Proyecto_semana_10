@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
 
+let API = 'https://api.jikan.moe/v3/search/anime?q=';
 
-let API ="https://gateway.marvel.com:443/v1/public/comics?apikey=4b34bc6faf38c8612062b099d3d97faa"
 
-export function GetData(){
-    
+export function GetData() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch(API).then((response) => response.json())
+      .then((data) => {
+        setMovies(data.results);
+      });
+  }, []);
+
+  return movies;
 }

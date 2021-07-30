@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Homepage from './views/Homepage';
 import Detail from './views/Detail';
 import Nosotros from './views/Nosotros';
-import Carousel_data from './components/Carousel_data';
+
 import Contactenos from './views/Contactenos';
 
 
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
        <Router>
         <Header contactenos="contactenos" about="about" />
-        <Carousel_data />
+        
         <Switch>
           <Route path="/detail">
             <Detail />

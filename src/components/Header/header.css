@@ -2,6 +2,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
-    background-color: aqua;
+    padding: 5px;
+    background-color: #8cadac;
+    border-bottom: 10px;
 }

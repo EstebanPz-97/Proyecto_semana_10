@@ -1,5 +1,19 @@
+.navbar{
+    padding: 30px;
+}
 .navbar a{
     text-decoration: none;
-    color: #000;
+    color:black;
+    width: auto;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: white;
     padding: 10px;
+    font-size: 25px;
+}
+.navbar span{
+    margin-left: 10px;
 }

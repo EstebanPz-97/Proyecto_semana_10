@@ -5,6 +5,10 @@
     padding: 30px;
 }
 .card-1{
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    padding-right:16px;
+    border-radius: 25px;
     width: 70vw;
     display: flex;
     flex-direction: row;
@@ -12,7 +16,13 @@
     justify-content: center;
     align-content: center;
     margin-bottom: 30px;
+
 }
+.card-1:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+  }
+  
 
 .card-1 img {
     min-width: 200px;

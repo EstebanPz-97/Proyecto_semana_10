@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Homepage from './views/Homepage';
 import Detail from './views/Detail';
 import Nosotros from './views/Nosotros';
-
+import Buscador from './components/Buscador/index'
 import Contactenos from './views/Contactenos';
 
 
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
        <Router>
         <Header contactenos="contactenos" about="about" />
-        
+        <Buscador/>
         <Switch>
           <Route path="/detail">
             <Detail />

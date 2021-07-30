@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 
-let API = 'https://api.jikan.moe/v3/search/anime?q=';
 
+let API ="https://api.jikan.moe/v3/search/anime?q=action"
 
-export function GetData() {
-  const [movies, setMovies] = useState([]);
+export function GetData(){
+    const [animes, setAnimes] = useState([])
 
-  useEffect(() => {
-    fetch(API).then((response) => response.json())
-      .then((data) => {
-        setMovies(data.results);
-      });
-  }, []);
-
-  return movies;
+    useEffect(() => {
+        fetch(API).then((response) => response.json())
+        .then((data) => {
+            setAnimes(data.results);
+            console.log(animes);
+        });
+    },[]);
+    return animes
 }

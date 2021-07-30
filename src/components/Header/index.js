@@ -1,17 +1,9 @@
 import './header.css'
-import { Link } from 'react-router-dom'
-
-
-export default function Header (props){
-    console.log(props);
+import Logo from '../Logo'
+import Navbar from '../Navbar'
+export default function Header (){
     return <header>
-        
-        <span><Link to="/">Home</Link></span>
-
-        <span><Link to="/contactenos" className=""> {props.contactenos}</Link>
-        <Link to="/about">  { props.about}</Link></span>
-
-
-
+        <Logo />
+        <Navbar contactenos="contactenos" about="about" />
     </header>
 }

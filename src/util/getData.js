@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
 
 
-let API ="https://gateway.marvel.com:443/v1/public/comics?apikey=4b34bc6faf38c8612062b099d3d97faa"
+let API ="https://api.jikan.moe/v3/search/anime?q=action"
 
 export function GetData(){
-    
+    const [animes, setAnimes] = useState([])
+
+    useEffect(() => {
+        fetch(API).then((response) => response.json())
+        .then((data) => {
+            setAnimes(data.results);
+            console.log(animes);
+        });
+    },[]);
+    return animes
 }

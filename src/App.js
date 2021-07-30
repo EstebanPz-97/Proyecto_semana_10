@@ -39,21 +39,24 @@ function App() {
         <Switch>
           <Route path="/about">
             <Nosotros />
+            <Footer />
           </Route>
           <Route path="/contactenos">
             <Contactenos />
+            <Footer />
           </Route>
             <Route path="/results" exact>
               <Results />
+              <Footer />
             </Route>
             <Route path="/single-view" exact>
               <SingleView />
+              <Footer />
             </Route>
            <Route path="/">
             <Homepage />
           </Route> 
         </Switch>
-        <Footer />
       </Router> 
       </SearchContext.Provider>
     </div>
